@@ -23,3 +23,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   showImage(currentIndex);
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleBtn = document.querySelector('.menu-toggle');
+  const sidebar = document.querySelector('.sidebar');
+  const closeBtn = document.querySelector('.close-menu');
+
+  toggleBtn.addEventListener('click', () => {
+    sidebar.classList.remove('collapsed');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    sidebar.classList.add('collapsed');
+  });
+});
