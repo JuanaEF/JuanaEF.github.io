@@ -1,1 +1,14 @@
+# Configuración del SDK
+sdk_version: 3
 
+# Información del template
+id: mi-template-unico
+version: 1.0.0
+name: "Mi Plantilla Personalizada para proyecto personal"
+author: "JuanaEF"
+description: "Plantilla de prueba."
+
+# Opciones adicionales
+image_download: true
+credits: |
+  Esta plantilla utiliza datos de {Link: fuentes de datos en línea https://developers.flourish.studio/sdk/api-reference/template-yml} y teselas de mapa de {Link: otros proveedores https://developers.flourish.studio/sdk/api-reference/template-yml}.
