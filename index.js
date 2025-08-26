@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // === Carrusel ===
   const images = document.querySelectorAll('.carousel-image');
   const prevBtn = document.querySelector('.carousel-btn.prev');
   const nextBtn = document.querySelector('.carousel-btn.next');
-
   let currentIndex = 0;
 
   function showImage(index) {
@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   showImage(currentIndex);
-});
-document.addEventListener('DOMContentLoaded', () => {
+
+  // === Menú lateral ===
   const toggleBtn = document.querySelector('.menu-toggle');
   const sidebar = document.querySelector('.sidebar');
   const closeBtn = document.querySelector('.close-menu');
