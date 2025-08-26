@@ -97,7 +97,7 @@ button:hover {
 /* === Botón hamburguesa (izquierda) === */
 .menu-toggle {
   position: fixed;
-  top: 20px;
+  top: 30px;
   right: 20px;
   z-index: 100;
   font-size: 30px;
