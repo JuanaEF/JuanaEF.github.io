@@ -11,7 +11,7 @@ body {
   color: #333;
   min-height: 100vh;
   position: relative;
-  padding-right: 200px; /* espacio para el menú lateral */
+  padding-left: 200px; /* espacio para el menú lateral izquierdo */
 }
 
 .container {
@@ -51,7 +51,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #000; /* Alto contraste */
+  background-color: #000;
   color: #fff;
   border: 2px solid #fff;
   padding: 12px 18px;
@@ -93,11 +93,12 @@ button {
 button:hover {
   background-color: #004d40;
 }
-/* === Botón hamburguesa === */
+
+/* === Botón hamburguesa (izquierda) === */
 .menu-toggle {
   position: fixed;
   top: 20px;
-  right: 20px;
+  left: 20px;
   z-index: 100;
   font-size: 30px;
   background-color: #00796b;
@@ -108,11 +109,11 @@ button:hover {
   cursor: pointer;
 }
 
-/* === Menú colapsable === */
+/* === Menú colapsable desde la izquierda === */
 .sidebar {
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   width: 220px;
   height: 100%;
   background-color: #004d40;
@@ -121,20 +122,24 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  transform: translateX(0);
+  transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
   z-index: 99;
 }
 
-.sidebar.collapsed {
-  transform: translateX(100%);
+.sidebar:not(.collapsed) {
+  transform: translateX(0);
 }
 
-/* Botón para cerrar */
+.sidebar.collapsed {
+  transform: translateX(-100%);
+}
+
+/* Botón para cerrar el menú */
 .close-menu {
   position: absolute;
   top: 15px;
-  left: 15px;
+  right: 15px;
   font-size: 28px;
   background: none;
   color: white;
@@ -142,7 +147,7 @@ button:hover {
   cursor: pointer;
 }
 
-/* Links del menú */
+/* Enlaces del menú */
 .sidebar a {
   color: #e0f7fa;
   text-decoration: none;
