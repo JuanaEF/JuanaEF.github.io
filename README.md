@@ -1,10 +1,25 @@
 # JuanaEF.github.io
 
-🚀:)  Welcome to your new awesome project!
-This project has been created using webpack-cli, you can now run
+🚀# 🧪 QA Portfolio: Carrusel de Imágenes con Menú Lateral
 
-npm run build
-or
+Este proyecto muestra un carrusel interactivo con imágenes generadas por IA y un menú colapsable desde la izquierda, pensado como presentación inicial de una profesional QA.
 
-yarn build
-to bundle your application
+## 🚀 Tecnologías usadas
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+
+## 🖼️ Funcionalidades
+
+- Carrusel de imágenes con navegación
+- Menú lateral colapsable
+- Diseño responsive
+
+## ▶️ Cómo usar
+
+1. Clona el repositorio
+2. Abre `index.html` en tu navegador
+
+## 📁 Estructura del proyecto
+
